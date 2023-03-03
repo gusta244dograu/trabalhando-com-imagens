@@ -1,0 +1,24 @@
+//ESTRUTURA BÁSICA DE UM PROJETO FLUTTER
+
+import 'pacote:flutter/material.dart';
+
+void main(){
+
+  runApp(MaterialApp(
+
+    título: "Trabalhando com imagens",
+    casa: Contêiner(
+      margem: EdgeInsets.only( superior: 40),
+      decoração: BoxDecoration(
+        border: Border.all(largura: 3, cor: Colors.orange),
+
+      ),
+      filho: Image.asset(
+      "images/mesa.jpg",
+        ajuste: BoxFit.scaleDown,
+
+
+      )
+    ),
+  ));
+}
